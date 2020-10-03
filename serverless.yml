@@ -6,7 +6,7 @@ component: website
 provider:
   name: aws
   stage: dev
-  region: eu-north-1
+  region: eu-central-1
 
 inputs:
   src:
