@@ -1,6 +1,6 @@
 org: hirro
 app: worktajm-serverless
-name: react-starter
+name: worktajm-serverless
 component: website
 
 inputs:
