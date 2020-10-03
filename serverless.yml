@@ -3,6 +3,11 @@ app: worktajm-serverless
 name: worktajm-serverless
 component: website
 
+provider:
+  name: aws
+  stage: dev
+  region: eu-north-1
+
 inputs:
   src:
     src: ./src
