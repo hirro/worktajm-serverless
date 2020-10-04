@@ -1,4 +1,3 @@
-service: worktajm
 app: worktajm
 org: hirro
 provider:
