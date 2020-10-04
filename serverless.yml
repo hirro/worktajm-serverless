@@ -1,5 +1,16 @@
+service: worktajm
 app: worktajm
 org: hirro
 provider:
   name: aws
   runtime: nodejs12.x
+
+plugins:
+  - serverless-plugin-scripts
+
+custom:
+  scripts:
+    commands:
+      prepare_stage: cp site/templates/config-${opt:stage, 'dev'}.js site/src/config.js
+    hooks:
+      "package:initialize": cp site/templates/config-${opt:stage, 'dev'}.js site/src/config.js
