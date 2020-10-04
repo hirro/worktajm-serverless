@@ -4,7 +4,7 @@ name: permissions
 
 inputs:
   name: ${name}-${stage}
-  region: us-east-1
+  region: ${env:awsRegion}
   service: lambda.amazonaws.com
   policy:
     # AWS Lambda function containing Express Logs and Assume Role access
